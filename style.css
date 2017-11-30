@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-areas:
+        "profile profile intro intro intro"
+        ". projectDetails1 projectImg1"
+        ". projectDetails2 projectImg2"
+        ". projectDetails3 projectImg3";
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.projectDetails1 {
+    grid-area: projetDetails1;
+}
+
+.projectImg1 {
+    grid-area: projectImg1;
+}
