@@ -1,26 +1,34 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
-    grid-template-areas:
-        "profile profile intro intro intro"
-        ". projectDetails1 projectImg1"
-        ". projectDetails2 projectImg2"
-        ". projectDetails3 projectImg3";
+    grid-template-rows: 25vh 50vh auto;
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .profile {
-    grid-area: profile;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0 auto;
+    background-image: url("me.jpg");
+    min-height: 20px; 
 }
 
 .intro {
-    grid-area: intro;
+    grid-column: 3/end;
+    grid-row: 1/2;
 }
 
 .projectDetails1 {
-    grid-area: projetDetails1;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 .projectImg1 {
-    grid-area: projectImg1;
+    grid-column: 3/ span 3;
+    grid-row: 2/3;
 }
