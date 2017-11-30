@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25vh 50vh auto;
+    grid-template-rows: 25vh 50vh 50vh auto;
     
 }
 
@@ -12,23 +12,25 @@ img {
 
 .profile {
     grid-column: 1/3;
-    grid-row: 1/2;
-    margin: 0 auto;
-    background-image: url("me.jpg");
-    min-height: 20px; 
+    grid-row: 2/3;
+    background-size: cover;
+    background: url('me.jpg') no-repeat;
 }
 
 .intro {
     grid-column: 3/end;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 .projectDetails1 {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 .projectImg1 {
     grid-column: 3/ span 3;
-    grid-row: 2/3;
+    grid-row: 3/4;
+    background-image: url('http://placehold.jp/640x480.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
