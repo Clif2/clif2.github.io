@@ -1,6 +1,6 @@
 # clif2.github.io
 
-Grading Rubric
+Grading Rubric Checklist
 
 * Portfolio page passes the W3 HTML validator
 * Portfolio page pass the W3 CSS validator
