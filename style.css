@@ -1,8 +1,29 @@
-body {
+@font-face {
+  font-family: 'Radnika';
+  src: url('Radnika-Medium.otf'); 
+}
+
+.container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25vh 50vh 50vh auto;
-    
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(10, 4rem) auto; 
+    grid-gap: 0.5rem;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container p {
+  font-family: 'Radnika';
+  font-size: 1.5rem;
+  line-height: 2em;
+  margin-bottom: 1rem;
+}
+
+.container h1 {
+  font-family: 'Radnika';
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 img {
@@ -10,26 +31,22 @@ img {
     height: auto;
 }
 
+.intro {
+  grid-column: 4/14;
+  grid-row: 4;
+}
+
+
 .profile {
-    grid-column: 1/3;
-    grid-row: 2/3;
     background-size: cover;
     background: url('me.jpg') no-repeat;
 }
 
-.intro {
-    grid-column: 3/end;
-    grid-row: 2/3;
-}
 
 .projectDetails1 {
-    grid-column: 2/3;
-    grid-row: 3/4;
 }
 
 .projectImg1 {
-    grid-column: 3/ span 3;
-    grid-row: 3/4;
     background-image: url('http://placehold.jp/640x480.png');
     background-repeat: no-repeat;
     background-size: cover;
